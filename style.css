@@ -30,7 +30,7 @@ body{
     background: linear-gradient(210deg, var(--dark-blue) 0%, var(--very-dark-blue) 120%);
     width: 300px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 7%;
     padding: 30px;
 }
 
@@ -62,27 +62,31 @@ input[type="radio"]{
 }
 
 input[type="radio"] + label{
-    background-color: var(--medium-grey);
-    padding: 10px 15px;
+    background-color: var(--dark-blue);
+    padding: 12px 17px;
     border-radius: 50%;
 }
 
 input[type="radio"].input1 + label{
-    background-color: var(--medium-grey);
-    padding: 10px 17px;
+    background-color: var(--dark-blue);
+    padding: 12px 19px;
     border-radius: 50%;
 }
 
 input[type="radio"]:checked + label{
+    background-color: var(--light-grey);
+}
+
+input[type="radio"].input1:checked + label{
+    background-color: var(--light-grey);
+}
+
+input[type="radio"]:hover + label{
     background-color: var(--orange);
-    padding: 10px 15px;
-    border-radius: 50%;
 }
 
 input[type="radio"].input1:checked + label{
     background-color: var(--orange);
-    padding: 10px 17px;
-    border-radius: 50%;
 }
 
 #submit{
@@ -90,10 +94,10 @@ input[type="radio"].input1:checked + label{
     color: var(--white);
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px 20px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 5px;
     cursor: pointer;
     text-transform: uppercase;
